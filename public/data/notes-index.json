@@ -1,0 +1,893 @@
+{
+  "categories": [
+    {
+      "name": "BackendNotes",
+      "icon": "/nodejs.png",
+      "notes": [
+        {
+          "slug": "auth",
+          "title": "Authorization and Authentication",
+          "description": "JWT, bcrypt, sesiones vs tokens, OAuth",
+          "file": "BackendNotes/auth.md"
+        },
+        {
+          "slug": "index",
+          "title": "Backend Notes - Index",
+          "description": "Node.js, bases de datos, autenticación, testing, producción",
+          "file": "BackendNotes/index.md"
+        },
+        {
+          "slug": "buffers",
+          "title": "Buffers",
+          "description": "Raw binary data, Buffer API, encoding",
+          "file": "BackendNotes/buffers.md"
+        },
+        {
+          "slug": "ci-cd",
+          "title": "CI/CD",
+          "description": "Continuous Integration, pipelines, automatización",
+          "file": "BackendNotes/ci-cd.md"
+        },
+        {
+          "slug": "client-server",
+          "title": "Client-Server Model",
+          "description": "Arquitectura cliente-servidor, peticiones y respuestas",
+          "file": "BackendNotes/client-server.md"
+        },
+        {
+          "slug": "config-management",
+          "title": "Configuration management and environments in Node.js",
+          "description": "Variables de entorno, dotenv, entornos",
+          "file": "BackendNotes/config-management.md"
+        },
+        {
+          "slug": "console-errors",
+          "title": "Console",
+          "description": "Console module, errores comunes, debugging",
+          "file": "BackendNotes/console-errors.md"
+        },
+        {
+          "slug": "databases",
+          "title": "Databases. NoSQL",
+          "description": "MongoDB, modelos flexibles, sin schema",
+          "file": "BackendNotes/databases.md"
+        },
+        {
+          "slug": "docker",
+          "title": "Docker",
+          "description": "Contenedores, imágenes, Dockerfile, docker-compose",
+          "file": "BackendNotes/docker.md"
+        },
+        {
+          "slug": "express",
+          "title": "Express and Layered Architecture",
+          "description": "Routers, middleware, controladores, servicios",
+          "file": "BackendNotes/express.md"
+        },
+        {
+          "slug": "file-system",
+          "title": "File System",
+          "description": "fs module, archivos, streams de archivos",
+          "file": "BackendNotes/file-system.md"
+        },
+        {
+          "slug": "graphql",
+          "title": "Graphql",
+          "description": "Queries, mutations, schemas, resolvers",
+          "file": "BackendNotes/graphql.md"
+        },
+        {
+          "slug": "modules",
+          "title": "Importaciones y exportaciones",
+          "description": "ESM, CommonJS, diferencias, sintaxis",
+          "file": "BackendNotes/modules.md"
+        },
+        {
+          "slug": "jenkins",
+          "title": "Jenkins",
+          "description": "Automation server, pipelines CI/CD",
+          "file": "BackendNotes/jenkins.md"
+        },
+        {
+          "slug": "logging-debugging",
+          "title": "Logging and debugging in Node.js",
+          "description": "Winston, debugging tools, logs",
+          "file": "BackendNotes/logging-debugging.md"
+        },
+        {
+          "slug": "networking",
+          "title": "Networking (pendiente)",
+          "description": "HTTP/HTTPS, TCP/IP, DNS",
+          "file": "BackendNotes/networking.md"
+        },
+        {
+          "slug": "event-loop",
+          "title": "Node.js Event Loop",
+          "description": "Non-blocking I/O, microtasks, macrotasks",
+          "file": "BackendNotes/event-loop.md"
+        },
+        {
+          "slug": "fundamentals",
+          "title": "Node.js Fundamentals",
+          "description": "Runtime, globals, módulos nativos",
+          "file": "BackendNotes/fundamentals.md"
+        },
+        {
+          "slug": "repl-emitters",
+          "title": "Node.js REPL",
+          "description": "Interactive environment, eventos, EventEmitter",
+          "file": "BackendNotes/repl-emitters.md"
+        },
+        {
+          "slug": "os-child-process",
+          "title": "Operating System",
+          "description": "OS module, child_process, multiprocesos",
+          "file": "BackendNotes/os-child-process.md"
+        },
+        {
+          "slug": "package-json",
+          "title": "Package.json",
+          "description": "Dependencias, scripts, versionado",
+          "file": "BackendNotes/package-json.md"
+        },
+        {
+          "slug": "path",
+          "title": "Path module",
+          "description": "Manejo de rutas, join, resolve, parse",
+          "file": "BackendNotes/path.md"
+        },
+        {
+          "slug": "design-patterns",
+          "title": "Patrones de Diseño / Design Patterns",
+          "description": "Factory, Singleton, Observer, patrones comunes",
+          "file": "BackendNotes/design-patterns.md"
+        },
+        {
+          "slug": "12-factors",
+          "title": "Production-Ready Node.js Applications",
+          "description": "Twelve-factor app, buenas prácticas",
+          "file": "BackendNotes/12-factors.md"
+        },
+        {
+          "slug": "relational-databases",
+          "title": "Relational Databases",
+          "description": "SQL, PostgreSQL, esquemas, relaciones",
+          "file": "BackendNotes/relational-databases.md"
+        },
+        {
+          "slug": "rest-api",
+          "title": "REST API",
+          "description": "REST constraints, endpoints, status codes",
+          "file": "BackendNotes/rest-api.md"
+        },
+        {
+          "slug": "streams",
+          "title": "Streams",
+          "description": "Stream processing, pipe, transform",
+          "file": "BackendNotes/streams.md"
+        },
+        {
+          "slug": "testing",
+          "title": "Testing",
+          "description": "Unit tests, integration tests, Jest",
+          "file": "BackendNotes/testing.md"
+        }
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "icon": "/js.png",
+      "notes": [
+        {
+          "slug": "arrays",
+          "title": "Arrays",
+          "description": "Creating, accessing, modifying, instance methods, multidimensional, iteration, map/filter/reduce",
+          "file": "JavaScript/arrays.md"
+        },
+        {
+          "slug": "async-await",
+          "title": "Async / Await",
+          "description": "Async/await syntax, fetch API",
+          "file": "JavaScript/async-await.md"
+        },
+        {
+          "slug": "browser-apis",
+          "title": "Browser APIs & Storage",
+          "description": "Cookies, localStorage, sessionStorage, IndexedDB, DOM",
+          "file": "JavaScript/browser-apis.md"
+        },
+        {
+          "slug": "closures",
+          "title": "Closures",
+          "description": "Closure concept and examples",
+          "file": "JavaScript/closures.md"
+        },
+        {
+          "slug": "control-flow",
+          "title": "Control Flow",
+          "description": "Conditionals, loops, iterators",
+          "file": "JavaScript/control-flow.md"
+        },
+        {
+          "slug": "event-loop",
+          "title": "Event Loop & Async Patterns",
+          "description": "Event loop, microtasks, macrotasks",
+          "file": "JavaScript/event-loop.md"
+        },
+        {
+          "slug": "functions",
+          "title": "Functions",
+          "description": "Declarations, expressions, arrow functions, this, call/apply/bind",
+          "file": "JavaScript/functions.md"
+        },
+        {
+          "slug": "callbacks",
+          "title": "JavaScript Callback Function",
+          "description": "Synchronous, asynchronous callbacks, callback hell",
+          "file": "JavaScript/callbacks.md"
+        },
+        {
+          "slug": "fundamentals",
+          "title": "JavaScript Fundamentals",
+          "description": "Types, variables, hoisting, TDZ, scope",
+          "file": "JavaScript/fundamentals.md"
+        },
+        {
+          "slug": "modules",
+          "title": "JavaScript Modules",
+          "description": "ES Modules, CommonJS, export/import, require",
+          "file": "JavaScript/modules.md"
+        },
+        {
+          "slug": "promises",
+          "title": "JavaScript Promises",
+          "description": "Promises, Promise.all, Fetch API",
+          "file": "JavaScript/promises.md"
+        },
+        {
+          "slug": "objects",
+          "title": "Objects & Copying",
+          "description": "Object literals, destructuring, spread, shallow/deep copy",
+          "file": "JavaScript/objects.md"
+        },
+        {
+          "slug": "operators",
+          "title": "Operators",
+          "description": "Arithmetic, comparison, logical, ternary, optional chaining, nullish coalescing, short-circuit, truthy/falsy",
+          "file": "JavaScript/operators.md"
+        },
+        {
+          "slug": "prototypes-classes",
+          "title": "Prototypes & Classes",
+          "description": "Prototype chain, OOP, classes, inheritance",
+          "file": "JavaScript/prototypes-classes.md"
+        },
+        {
+          "slug": "sets-maps-symbols",
+          "title": "Sets, Maps & Symbols",
+          "description": "Set, Map, WeakMap, WeakSet, Symbol",
+          "file": "JavaScript/sets-maps-symbols.md"
+        },
+        {
+          "slug": "strings",
+          "title": "Strings & String Methods",
+          "description": "String methods, template literals, concatenation",
+          "file": "JavaScript/strings.md"
+        }
+      ]
+    },
+    {
+      "name": "NextJS",
+      "icon": "/nextjs.png",
+      "notes": [
+        {
+          "slug": "nextjs",
+          "title": "Next.js",
+          "description": "Pages Router, App Router, commands",
+          "file": "NextJS/nextjs.md"
+        }
+      ]
+    },
+    {
+      "name": "React",
+      "icon": "/react.png",
+      "notes": [
+        {
+          "slug": "class-components",
+          "title": "Class Components React",
+          "description": "State, props, lifecycle methods",
+          "file": "React/class-components.md"
+        },
+        {
+          "slug": "controlled-vs-uncontrolled",
+          "title": "Controlled vs Uncontrolled Components",
+          "description": "",
+          "file": "React/controlled-vs-uncontrolled.md"
+        },
+        {
+          "slug": "context-api",
+          "title": "React Context API",
+          "description": "createContext, Provider, useContext",
+          "file": "React/context-api.md"
+        },
+        {
+          "slug": "fundamentals",
+          "title": "React Fundamentals",
+          "description": "JSX, components, props, Virtual DOM, PropTypes",
+          "file": "React/fundamentals.md"
+        },
+        {
+          "slug": "hooks",
+          "title": "React Hooks",
+          "description": "useState, useEffect, useRef, useCallback, useMemo, useReducer, custom hooks",
+          "file": "React/hooks.md"
+        },
+        {
+          "slug": "react-router-dom",
+          "title": "React Router DOM",
+          "description": "Routes, navigation, hooks",
+          "file": "React/react-router-dom.md"
+        },
+        {
+          "slug": "memo",
+          "title": "React.memo",
+          "description": "Component memoization",
+          "file": "React/memo.md"
+        },
+        {
+          "slug": "use-memo",
+          "title": "useMemo Hook",
+          "description": "",
+          "file": "React/use-memo.md"
+        }
+      ]
+    },
+    {
+      "name": "Redux",
+      "icon": "/redux.png",
+      "notes": [
+        {
+          "slug": "redux-vs-rtk",
+          "title": "Comparación: Redux vs Redux Toolkit (RTK)",
+          "description": "Side-by-side comparison",
+          "file": "Redux/redux-vs-rtk.md"
+        },
+        {
+          "slug": "traditional-redux",
+          "title": "Redux",
+          "description": "Core concepts, theory",
+          "file": "Redux/traditional-redux.md"
+        },
+        {
+          "slug": "redux-toolkit",
+          "title": "Redux Toolkit (RTK)",
+          "description": "configureStore, createSlice, createAsyncThunk",
+          "file": "Redux/redux-toolkit.md"
+        },
+        {
+          "slug": "redux-toolkit-ts",
+          "title": "Redux Toolkit TypeScript",
+          "description": "TypeScript setup",
+          "file": "Redux/redux-toolkit-ts.md"
+        },
+        {
+          "slug": "redux-traditional-steps",
+          "title": "Redux Traditional Steps (JavaScript)",
+          "description": "Step-by-step JS",
+          "file": "Redux/redux-traditional-steps.md"
+        },
+        {
+          "slug": "redux-traditional-ts",
+          "title": "Redux Traditional Steps (TypeScript)",
+          "description": "Step-by-step TypeScript",
+          "file": "Redux/redux-traditional-ts.md"
+        }
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "icon": "/typescript.png",
+      "notes": [
+        {
+          "slug": "decorators",
+          "title": "Decorators",
+          "description": "Class, method, property, parameter decorators",
+          "file": "TypeScript/decorators.md"
+        },
+        {
+          "slug": "generics",
+          "title": "Generics",
+          "description": "Generic functions, classes, constraints",
+          "file": "TypeScript/generics.md"
+        },
+        {
+          "slug": "type-operators",
+          "title": "Type Operators",
+          "description": "typeof, keyof, indexed access, conditional, mapped, template literal, infer",
+          "file": "TypeScript/type-operators.md"
+        },
+        {
+          "slug": "classes",
+          "title": "TypeScript Classes",
+          "description": "Access modifiers, inheritance, abstract classes, singleton",
+          "file": "TypeScript/classes.md"
+        },
+        {
+          "slug": "tipos",
+          "title": "TypeScript Fundamentals",
+          "description": "Types, interfaces, type aliases, utility types, React + TS",
+          "file": "TypeScript/tipos.md"
+        }
+      ]
+    },
+    {
+      "name": "Zustand",
+      "icon": "/zustand.svg",
+      "notes": [
+        {
+          "slug": "zustand",
+          "title": "Zustand",
+          "description": "Store creation, Immer, selectors, async actions",
+          "file": "Zustand/zustand.md"
+        }
+      ]
+    }
+  ],
+  "flatList": [
+    {
+      "slug": "auth",
+      "title": "Authorization and Authentication",
+      "description": "JWT, bcrypt, sesiones vs tokens, OAuth",
+      "file": "BackendNotes/auth.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "index",
+      "title": "Backend Notes - Index",
+      "description": "Node.js, bases de datos, autenticación, testing, producción",
+      "file": "BackendNotes/index.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "buffers",
+      "title": "Buffers",
+      "description": "Raw binary data, Buffer API, encoding",
+      "file": "BackendNotes/buffers.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "ci-cd",
+      "title": "CI/CD",
+      "description": "Continuous Integration, pipelines, automatización",
+      "file": "BackendNotes/ci-cd.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "client-server",
+      "title": "Client-Server Model",
+      "description": "Arquitectura cliente-servidor, peticiones y respuestas",
+      "file": "BackendNotes/client-server.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "config-management",
+      "title": "Configuration management and environments in Node.js",
+      "description": "Variables de entorno, dotenv, entornos",
+      "file": "BackendNotes/config-management.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "console-errors",
+      "title": "Console",
+      "description": "Console module, errores comunes, debugging",
+      "file": "BackendNotes/console-errors.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "databases",
+      "title": "Databases. NoSQL",
+      "description": "MongoDB, modelos flexibles, sin schema",
+      "file": "BackendNotes/databases.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "docker",
+      "title": "Docker",
+      "description": "Contenedores, imágenes, Dockerfile, docker-compose",
+      "file": "BackendNotes/docker.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "express",
+      "title": "Express and Layered Architecture",
+      "description": "Routers, middleware, controladores, servicios",
+      "file": "BackendNotes/express.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "file-system",
+      "title": "File System",
+      "description": "fs module, archivos, streams de archivos",
+      "file": "BackendNotes/file-system.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "graphql",
+      "title": "Graphql",
+      "description": "Queries, mutations, schemas, resolvers",
+      "file": "BackendNotes/graphql.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "modules",
+      "title": "Importaciones y exportaciones",
+      "description": "ESM, CommonJS, diferencias, sintaxis",
+      "file": "BackendNotes/modules.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "jenkins",
+      "title": "Jenkins",
+      "description": "Automation server, pipelines CI/CD",
+      "file": "BackendNotes/jenkins.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "logging-debugging",
+      "title": "Logging and debugging in Node.js",
+      "description": "Winston, debugging tools, logs",
+      "file": "BackendNotes/logging-debugging.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "networking",
+      "title": "Networking (pendiente)",
+      "description": "HTTP/HTTPS, TCP/IP, DNS",
+      "file": "BackendNotes/networking.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "event-loop",
+      "title": "Node.js Event Loop",
+      "description": "Non-blocking I/O, microtasks, macrotasks",
+      "file": "BackendNotes/event-loop.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "fundamentals",
+      "title": "Node.js Fundamentals",
+      "description": "Runtime, globals, módulos nativos",
+      "file": "BackendNotes/fundamentals.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "repl-emitters",
+      "title": "Node.js REPL",
+      "description": "Interactive environment, eventos, EventEmitter",
+      "file": "BackendNotes/repl-emitters.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "os-child-process",
+      "title": "Operating System",
+      "description": "OS module, child_process, multiprocesos",
+      "file": "BackendNotes/os-child-process.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "package-json",
+      "title": "Package.json",
+      "description": "Dependencias, scripts, versionado",
+      "file": "BackendNotes/package-json.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "path",
+      "title": "Path module",
+      "description": "Manejo de rutas, join, resolve, parse",
+      "file": "BackendNotes/path.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "design-patterns",
+      "title": "Patrones de Diseño / Design Patterns",
+      "description": "Factory, Singleton, Observer, patrones comunes",
+      "file": "BackendNotes/design-patterns.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "12-factors",
+      "title": "Production-Ready Node.js Applications",
+      "description": "Twelve-factor app, buenas prácticas",
+      "file": "BackendNotes/12-factors.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "relational-databases",
+      "title": "Relational Databases",
+      "description": "SQL, PostgreSQL, esquemas, relaciones",
+      "file": "BackendNotes/relational-databases.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "rest-api",
+      "title": "REST API",
+      "description": "REST constraints, endpoints, status codes",
+      "file": "BackendNotes/rest-api.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "streams",
+      "title": "Streams",
+      "description": "Stream processing, pipe, transform",
+      "file": "BackendNotes/streams.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "testing",
+      "title": "Testing",
+      "description": "Unit tests, integration tests, Jest",
+      "file": "BackendNotes/testing.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "arrays",
+      "title": "Arrays",
+      "description": "Creating, accessing, modifying, instance methods, multidimensional, iteration, map/filter/reduce",
+      "file": "JavaScript/arrays.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "async-await",
+      "title": "Async / Await",
+      "description": "Async/await syntax, fetch API",
+      "file": "JavaScript/async-await.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "browser-apis",
+      "title": "Browser APIs & Storage",
+      "description": "Cookies, localStorage, sessionStorage, IndexedDB, DOM",
+      "file": "JavaScript/browser-apis.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "closures",
+      "title": "Closures",
+      "description": "Closure concept and examples",
+      "file": "JavaScript/closures.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "control-flow",
+      "title": "Control Flow",
+      "description": "Conditionals, loops, iterators",
+      "file": "JavaScript/control-flow.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "event-loop",
+      "title": "Event Loop & Async Patterns",
+      "description": "Event loop, microtasks, macrotasks",
+      "file": "JavaScript/event-loop.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "functions",
+      "title": "Functions",
+      "description": "Declarations, expressions, arrow functions, this, call/apply/bind",
+      "file": "JavaScript/functions.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "callbacks",
+      "title": "JavaScript Callback Function",
+      "description": "Synchronous, asynchronous callbacks, callback hell",
+      "file": "JavaScript/callbacks.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "fundamentals",
+      "title": "JavaScript Fundamentals",
+      "description": "Types, variables, hoisting, TDZ, scope",
+      "file": "JavaScript/fundamentals.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "modules",
+      "title": "JavaScript Modules",
+      "description": "ES Modules, CommonJS, export/import, require",
+      "file": "JavaScript/modules.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "promises",
+      "title": "JavaScript Promises",
+      "description": "Promises, Promise.all, Fetch API",
+      "file": "JavaScript/promises.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "objects",
+      "title": "Objects & Copying",
+      "description": "Object literals, destructuring, spread, shallow/deep copy",
+      "file": "JavaScript/objects.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "operators",
+      "title": "Operators",
+      "description": "Arithmetic, comparison, logical, ternary, optional chaining, nullish coalescing, short-circuit, truthy/falsy",
+      "file": "JavaScript/operators.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "prototypes-classes",
+      "title": "Prototypes & Classes",
+      "description": "Prototype chain, OOP, classes, inheritance",
+      "file": "JavaScript/prototypes-classes.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "sets-maps-symbols",
+      "title": "Sets, Maps & Symbols",
+      "description": "Set, Map, WeakMap, WeakSet, Symbol",
+      "file": "JavaScript/sets-maps-symbols.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "strings",
+      "title": "Strings & String Methods",
+      "description": "String methods, template literals, concatenation",
+      "file": "JavaScript/strings.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "nextjs",
+      "title": "Next.js",
+      "description": "Pages Router, App Router, commands",
+      "file": "NextJS/nextjs.md",
+      "category": "NextJS"
+    },
+    {
+      "slug": "class-components",
+      "title": "Class Components React",
+      "description": "State, props, lifecycle methods",
+      "file": "React/class-components.md",
+      "category": "React"
+    },
+    {
+      "slug": "controlled-vs-uncontrolled",
+      "title": "Controlled vs Uncontrolled Components",
+      "description": "",
+      "file": "React/controlled-vs-uncontrolled.md",
+      "category": "React"
+    },
+    {
+      "slug": "context-api",
+      "title": "React Context API",
+      "description": "createContext, Provider, useContext",
+      "file": "React/context-api.md",
+      "category": "React"
+    },
+    {
+      "slug": "fundamentals",
+      "title": "React Fundamentals",
+      "description": "JSX, components, props, Virtual DOM, PropTypes",
+      "file": "React/fundamentals.md",
+      "category": "React"
+    },
+    {
+      "slug": "hooks",
+      "title": "React Hooks",
+      "description": "useState, useEffect, useRef, useCallback, useMemo, useReducer, custom hooks",
+      "file": "React/hooks.md",
+      "category": "React"
+    },
+    {
+      "slug": "react-router-dom",
+      "title": "React Router DOM",
+      "description": "Routes, navigation, hooks",
+      "file": "React/react-router-dom.md",
+      "category": "React"
+    },
+    {
+      "slug": "memo",
+      "title": "React.memo",
+      "description": "Component memoization",
+      "file": "React/memo.md",
+      "category": "React"
+    },
+    {
+      "slug": "use-memo",
+      "title": "useMemo Hook",
+      "description": "",
+      "file": "React/use-memo.md",
+      "category": "React"
+    },
+    {
+      "slug": "redux-vs-rtk",
+      "title": "Comparación: Redux vs Redux Toolkit (RTK)",
+      "description": "Side-by-side comparison",
+      "file": "Redux/redux-vs-rtk.md",
+      "category": "Redux"
+    },
+    {
+      "slug": "traditional-redux",
+      "title": "Redux",
+      "description": "Core concepts, theory",
+      "file": "Redux/traditional-redux.md",
+      "category": "Redux"
+    },
+    {
+      "slug": "redux-toolkit",
+      "title": "Redux Toolkit (RTK)",
+      "description": "configureStore, createSlice, createAsyncThunk",
+      "file": "Redux/redux-toolkit.md",
+      "category": "Redux"
+    },
+    {
+      "slug": "redux-toolkit-ts",
+      "title": "Redux Toolkit TypeScript",
+      "description": "TypeScript setup",
+      "file": "Redux/redux-toolkit-ts.md",
+      "category": "Redux"
+    },
+    {
+      "slug": "redux-traditional-steps",
+      "title": "Redux Traditional Steps (JavaScript)",
+      "description": "Step-by-step JS",
+      "file": "Redux/redux-traditional-steps.md",
+      "category": "Redux"
+    },
+    {
+      "slug": "redux-traditional-ts",
+      "title": "Redux Traditional Steps (TypeScript)",
+      "description": "Step-by-step TypeScript",
+      "file": "Redux/redux-traditional-ts.md",
+      "category": "Redux"
+    },
+    {
+      "slug": "decorators",
+      "title": "Decorators",
+      "description": "Class, method, property, parameter decorators",
+      "file": "TypeScript/decorators.md",
+      "category": "TypeScript"
+    },
+    {
+      "slug": "generics",
+      "title": "Generics",
+      "description": "Generic functions, classes, constraints",
+      "file": "TypeScript/generics.md",
+      "category": "TypeScript"
+    },
+    {
+      "slug": "type-operators",
+      "title": "Type Operators",
+      "description": "typeof, keyof, indexed access, conditional, mapped, template literal, infer",
+      "file": "TypeScript/type-operators.md",
+      "category": "TypeScript"
+    },
+    {
+      "slug": "classes",
+      "title": "TypeScript Classes",
+      "description": "Access modifiers, inheritance, abstract classes, singleton",
+      "file": "TypeScript/classes.md",
+      "category": "TypeScript"
+    },
+    {
+      "slug": "tipos",
+      "title": "TypeScript Fundamentals",
+      "description": "Types, interfaces, type aliases, utility types, React + TS",
+      "file": "TypeScript/tipos.md",
+      "category": "TypeScript"
+    },
+    {
+      "slug": "zustand",
+      "title": "Zustand",
+      "description": "Store creation, Immer, selectors, async actions",
+      "file": "Zustand/zustand.md",
+      "category": "Zustand"
+    }
+  ]
+}
