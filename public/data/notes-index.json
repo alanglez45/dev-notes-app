@@ -1,20 +1,272 @@
 {
   "categories": [
     {
+      "name": "JavaScript",
+      "icon": "/js.png",
+      "notes": [
+        {
+          "slug": "fundamentals",
+          "title": "JavaScript Fundamentals",
+          "description": "Types, variables, hoisting, TDZ, scope",
+          "file": "JavaScript/fundamentals.md"
+        },
+        {
+          "slug": "operators",
+          "title": "Operators",
+          "description": "Arithmetic, comparison, logical, ternary, optional chaining, nullish coalescing, short-circuit, truthy/falsy",
+          "file": "JavaScript/operators.md"
+        },
+        {
+          "slug": "control-flow",
+          "title": "Control Flow",
+          "description": "Conditionals, loops, iterators",
+          "file": "JavaScript/control-flow.md"
+        },
+        {
+          "slug": "strings",
+          "title": "Strings & String Methods",
+          "description": "String methods, template literals, concatenation",
+          "file": "JavaScript/strings.md"
+        },
+        {
+          "slug": "arrays",
+          "title": "Arrays",
+          "description": "Creating, accessing, modifying, instance methods, multidimensional, iteration, map/filter/reduce",
+          "file": "JavaScript/arrays.md"
+        },
+        {
+          "slug": "functions",
+          "title": "Functions",
+          "description": "Declarations, expressions, arrow functions, this, call/apply/bind",
+          "file": "JavaScript/functions.md"
+        },
+        {
+          "slug": "objects",
+          "title": "Objects & Copying",
+          "description": "Object literals, destructuring, spread, shallow/deep copy",
+          "file": "JavaScript/objects.md"
+        },
+        {
+          "slug": "closures",
+          "title": "Closures",
+          "description": "Closure concept and examples",
+          "file": "JavaScript/closures.md"
+        },
+        {
+          "slug": "prototypes-classes",
+          "title": "Prototypes & Classes",
+          "description": "Prototype chain, OOP, classes, inheritance",
+          "file": "JavaScript/prototypes-classes.md"
+        },
+        {
+          "slug": "sets-maps-symbols",
+          "title": "Sets, Maps & Symbols",
+          "description": "Set, Map, WeakMap, WeakSet, Symbol",
+          "file": "JavaScript/sets-maps-symbols.md"
+        },
+        {
+          "slug": "event-loop",
+          "title": "Event Loop & Async Patterns",
+          "description": "Event loop, microtasks, macrotasks",
+          "file": "JavaScript/event-loop.md"
+        },
+        {
+          "slug": "callbacks",
+          "title": "JavaScript Callback Function",
+          "description": "Synchronous, asynchronous callbacks, callback hell",
+          "file": "JavaScript/callbacks.md"
+        },
+        {
+          "slug": "promises",
+          "title": "JavaScript Promises",
+          "description": "Promises, Promise.all, Fetch API",
+          "file": "JavaScript/promises.md"
+        },
+        {
+          "slug": "async-await",
+          "title": "Async / Await",
+          "description": "Async/await syntax, fetch API",
+          "file": "JavaScript/async-await.md"
+        },
+        {
+          "slug": "browser-apis",
+          "title": "Browser APIs & Storage",
+          "description": "Cookies, localStorage, sessionStorage, IndexedDB, DOM",
+          "file": "JavaScript/browser-apis.md"
+        },
+        {
+          "slug": "modules",
+          "title": "JavaScript Modules",
+          "description": "ES Modules, CommonJS, export/import, require",
+          "file": "JavaScript/modules.md"
+        },
+        {
+          "slug": "index",
+          "title": "JavaScript Notes - Index",
+          "description": "",
+          "file": "JavaScript/index.md"
+        }
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "icon": "/typescript.png",
+      "notes": [
+        {
+          "slug": "tipos",
+          "title": "TypeScript Fundamentals",
+          "description": "Types, interfaces, type aliases, utility types, React + TS",
+          "file": "TypeScript/tipos.md"
+        },
+        {
+          "slug": "type-operators",
+          "title": "Type Operators",
+          "description": "typeof, keyof, indexed access, conditional, mapped, template literal, infer",
+          "file": "TypeScript/type-operators.md"
+        },
+        {
+          "slug": "generics",
+          "title": "Generics",
+          "description": "Generic functions, classes, constraints",
+          "file": "TypeScript/generics.md"
+        },
+        {
+          "slug": "classes",
+          "title": "TypeScript Classes",
+          "description": "Access modifiers, inheritance, abstract classes, singleton",
+          "file": "TypeScript/classes.md"
+        },
+        {
+          "slug": "decorators",
+          "title": "Decorators",
+          "description": "Class, method, property, parameter decorators",
+          "file": "TypeScript/decorators.md"
+        },
+        {
+          "slug": "index",
+          "title": "TypeScript Notes - Index",
+          "description": "",
+          "file": "TypeScript/index.md"
+        }
+      ]
+    },
+    {
+      "name": "React",
+      "icon": "/react.png",
+      "notes": [
+        {
+          "slug": "fundamentals",
+          "title": "React Fundamentals",
+          "description": "JSX, components, props, Virtual DOM, PropTypes",
+          "file": "React/fundamentals.md"
+        },
+        {
+          "slug": "hooks",
+          "title": "React Hooks",
+          "description": "useState, useEffect, useRef, useCallback, useMemo, useReducer, custom hooks",
+          "file": "React/hooks.md"
+        },
+        {
+          "slug": "context-api",
+          "title": "React Context API",
+          "description": "createContext, Provider, useContext",
+          "file": "React/context-api.md"
+        },
+        {
+          "slug": "controlled-vs-uncontrolled",
+          "title": "Controlled vs Uncontrolled Components",
+          "description": "",
+          "file": "React/controlled-vs-uncontrolled.md"
+        },
+        {
+          "slug": "memo",
+          "title": "React.memo",
+          "description": "Component memoization",
+          "file": "React/memo.md"
+        },
+        {
+          "slug": "react-router-dom",
+          "title": "React Router DOM",
+          "description": "Routes, navigation, hooks",
+          "file": "React/react-router-dom.md"
+        },
+        {
+          "slug": "class-components",
+          "title": "Class Components React",
+          "description": "State, props, lifecycle methods",
+          "file": "React/class-components.md"
+        },
+        {
+          "slug": "index",
+          "title": "React Notes - Index",
+          "description": "",
+          "file": "React/index.md"
+        },
+        {
+          "slug": "use-memo",
+          "title": "useMemo Hook",
+          "description": "",
+          "file": "React/use-memo.md"
+        }
+      ]
+    },
+    {
+      "name": "Docker",
+      "icon": "/docker.png",
+      "notes": [
+        {
+          "slug": "index",
+          "title": "Docker Notes - Index",
+          "description": "Docker notes overview",
+          "file": "Docker/index.md"
+        },
+        {
+          "slug": "01-docker-intro",
+          "title": "Docker — Introducción",
+          "description": "Conceptos básicos, imágenes y contenedores",
+          "file": "Docker/01-docker-intro.md"
+        },
+        {
+          "slug": "02-dockerfile",
+          "title": "Docker — Dockerfile",
+          "description": "Creación y configuración de Dockerfiles",
+          "file": "Docker/02-dockerfile.md"
+        },
+        {
+          "slug": "03-docker-run",
+          "title": "Docker — Ejecutar contenedores",
+          "description": "docker run, puertos, variables de entorno",
+          "file": "Docker/03-docker-run.md"
+        },
+        {
+          "slug": "04-docker-comandos",
+          "title": "Docker — Comandos esenciales",
+          "description": "docker ps, stop, start, logs, rm",
+          "file": "Docker/04-docker-comandos.md"
+        },
+        {
+          "slug": "05-docker-avanzado",
+          "title": "Docker — Avanzado",
+          "description": "Volúmenes, redes, docker-compose, optimización",
+          "file": "Docker/05-docker-avanzado.md"
+        }
+      ]
+    },
+    {
       "name": "BackendNotes",
       "icon": "/nodejs.png",
       "notes": [
-        {
-          "slug": "auth",
-          "title": "Authorization and Authentication",
-          "description": "JWT, bcrypt, sesiones vs tokens, OAuth",
-          "file": "BackendNotes/auth.md"
-        },
         {
           "slug": "index",
           "title": "Backend Notes - Index",
           "description": "Node.js, bases de datos, autenticación, testing, producción",
           "file": "BackendNotes/index.md"
+        },
+        {
+          "slug": "auth",
+          "title": "Authorization and Authentication",
+          "description": "JWT, bcrypt, sesiones vs tokens, OAuth",
+          "file": "BackendNotes/auth.md"
         },
         {
           "slug": "buffers",
@@ -171,108 +423,12 @@
           "title": "Testing",
           "description": "Unit tests, integration tests, Jest",
           "file": "BackendNotes/testing.md"
-        }
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "icon": "/js.png",
-      "notes": [
-        {
-          "slug": "arrays",
-          "title": "Arrays",
-          "description": "Creating, accessing, modifying, instance methods, multidimensional, iteration, map/filter/reduce",
-          "file": "JavaScript/arrays.md"
         },
         {
-          "slug": "async-await",
-          "title": "Async / Await",
-          "description": "Async/await syntax, fetch API",
-          "file": "JavaScript/async-await.md"
-        },
-        {
-          "slug": "browser-apis",
-          "title": "Browser APIs & Storage",
-          "description": "Cookies, localStorage, sessionStorage, IndexedDB, DOM",
-          "file": "JavaScript/browser-apis.md"
-        },
-        {
-          "slug": "closures",
-          "title": "Closures",
-          "description": "Closure concept and examples",
-          "file": "JavaScript/closures.md"
-        },
-        {
-          "slug": "control-flow",
-          "title": "Control Flow",
-          "description": "Conditionals, loops, iterators",
-          "file": "JavaScript/control-flow.md"
-        },
-        {
-          "slug": "event-loop",
-          "title": "Event Loop & Async Patterns",
-          "description": "Event loop, microtasks, macrotasks",
-          "file": "JavaScript/event-loop.md"
-        },
-        {
-          "slug": "functions",
-          "title": "Functions",
-          "description": "Declarations, expressions, arrow functions, this, call/apply/bind",
-          "file": "JavaScript/functions.md"
-        },
-        {
-          "slug": "callbacks",
-          "title": "JavaScript Callback Function",
-          "description": "Synchronous, asynchronous callbacks, callback hell",
-          "file": "JavaScript/callbacks.md"
-        },
-        {
-          "slug": "fundamentals",
-          "title": "JavaScript Fundamentals",
-          "description": "Types, variables, hoisting, TDZ, scope",
-          "file": "JavaScript/fundamentals.md"
-        },
-        {
-          "slug": "modules",
-          "title": "JavaScript Modules",
-          "description": "ES Modules, CommonJS, export/import, require",
-          "file": "JavaScript/modules.md"
-        },
-        {
-          "slug": "promises",
-          "title": "JavaScript Promises",
-          "description": "Promises, Promise.all, Fetch API",
-          "file": "JavaScript/promises.md"
-        },
-        {
-          "slug": "objects",
-          "title": "Objects & Copying",
-          "description": "Object literals, destructuring, spread, shallow/deep copy",
-          "file": "JavaScript/objects.md"
-        },
-        {
-          "slug": "operators",
-          "title": "Operators",
-          "description": "Arithmetic, comparison, logical, ternary, optional chaining, nullish coalescing, short-circuit, truthy/falsy",
-          "file": "JavaScript/operators.md"
-        },
-        {
-          "slug": "prototypes-classes",
-          "title": "Prototypes & Classes",
-          "description": "Prototype chain, OOP, classes, inheritance",
-          "file": "JavaScript/prototypes-classes.md"
-        },
-        {
-          "slug": "sets-maps-symbols",
-          "title": "Sets, Maps & Symbols",
-          "description": "Set, Map, WeakMap, WeakSet, Symbol",
-          "file": "JavaScript/sets-maps-symbols.md"
-        },
-        {
-          "slug": "strings",
-          "title": "Strings & String Methods",
-          "description": "String methods, template literals, concatenation",
-          "file": "JavaScript/strings.md"
+          "slug": "docker-notas",
+          "title": "Docker",
+          "description": "",
+          "file": "BackendNotes/docker-notas.md"
         }
       ]
     },
@@ -281,64 +437,82 @@
       "icon": "/nextjs.png",
       "notes": [
         {
-          "slug": "nextjs",
+          "slug": "index",
+          "title": "Next.js Notes - Index",
+          "description": "Next.js 14: App Router, Server Components, API routes, Image optimization, middleware",
+          "file": "NextJS/index.md"
+        },
+        {
+          "slug": "01-nextjs",
           "title": "Next.js",
-          "description": "Pages Router, App Router, commands",
-          "file": "NextJS/nextjs.md"
-        }
-      ]
-    },
-    {
-      "name": "React",
-      "icon": "/react.png",
-      "notes": [
-        {
-          "slug": "class-components",
-          "title": "Class Components React",
-          "description": "State, props, lifecycle methods",
-          "file": "React/class-components.md"
+          "description": "Conceptos básicos, instalación, creación de proyectos",
+          "file": "NextJS/01-nextjs.md"
         },
         {
-          "slug": "controlled-vs-uncontrolled",
-          "title": "Controlled vs Uncontrolled Components",
-          "description": "",
-          "file": "React/controlled-vs-uncontrolled.md"
+          "slug": "02-app-router",
+          "title": "App Router",
+          "description": "App Router, layouts, templates, linking",
+          "file": "NextJS/02-app-router.md"
         },
         {
-          "slug": "context-api",
-          "title": "React Context API",
-          "description": "createContext, Provider, useContext",
-          "file": "React/context-api.md"
+          "slug": "03-routing",
+          "title": "Routing",
+          "description": "Routing, navegación, Link, useRouter",
+          "file": "NextJS/03-routing.md"
         },
         {
-          "slug": "fundamentals",
-          "title": "React Fundamentals",
-          "description": "JSX, components, props, Virtual DOM, PropTypes",
-          "file": "React/fundamentals.md"
+          "slug": "04-server-components",
+          "title": "Server Components",
+          "description": "RSC, server-side rendering",
+          "file": "NextJS/04-server-components.md"
         },
         {
-          "slug": "hooks",
-          "title": "React Hooks",
-          "description": "useState, useEffect, useRef, useCallback, useMemo, useReducer, custom hooks",
-          "file": "React/hooks.md"
+          "slug": "05-client-components",
+          "title": "Client Components",
+          "description": "'use client', interactividad",
+          "file": "NextJS/05-client-components.md"
         },
         {
-          "slug": "react-router-dom",
-          "title": "React Router DOM",
-          "description": "Routes, navigation, hooks",
-          "file": "React/react-router-dom.md"
+          "slug": "06-data-fetching",
+          "title": "Data Fetching en Server Components",
+          "description": "fetch, caching, revalidación",
+          "file": "NextJS/06-data-fetching.md"
         },
         {
-          "slug": "memo",
-          "title": "React.memo",
-          "description": "Component memoization",
-          "file": "React/memo.md"
+          "slug": "07-api-routes",
+          "title": "API Routes (Route Handlers)",
+          "description": "Route Handlers, rutas dinámicas",
+          "file": "NextJS/07-api-routes.md"
         },
         {
-          "slug": "use-memo",
-          "title": "useMemo Hook",
-          "description": "",
-          "file": "React/use-memo.md"
+          "slug": "08-image-component",
+          "title": "Image Component",
+          "description": "Optimización de imágenes",
+          "file": "NextJS/08-image-component.md"
+        },
+        {
+          "slug": "09-metadata",
+          "title": "Metadata",
+          "description": "SEO, metadata API, Open Graph",
+          "file": "NextJS/09-metadata.md"
+        },
+        {
+          "slug": "10-middleware",
+          "title": "Middleware",
+          "description": "Middleware, matchers, redirects",
+          "file": "NextJS/10-middleware.md"
+        },
+        {
+          "slug": "11-public-folder",
+          "title": "Public Folder",
+          "description": "Archivos estáticos",
+          "file": "NextJS/11-public-folder.md"
+        },
+        {
+          "slug": "temas-pendientes",
+          "title": "Temas pendientes — Next.js",
+          "description": "Temas por profundizar",
+          "file": "NextJS/temas-pendientes.md"
         }
       ]
     },
@@ -347,16 +521,22 @@
       "icon": "/redux.png",
       "notes": [
         {
-          "slug": "redux-vs-rtk",
-          "title": "Comparación: Redux vs Redux Toolkit (RTK)",
-          "description": "Side-by-side comparison",
-          "file": "Redux/redux-vs-rtk.md"
-        },
-        {
           "slug": "traditional-redux",
           "title": "Redux",
           "description": "Core concepts, theory",
           "file": "Redux/traditional-redux.md"
+        },
+        {
+          "slug": "redux-traditional-steps",
+          "title": "Redux Traditional Steps (JavaScript)",
+          "description": "Step-by-step JS",
+          "file": "Redux/redux-traditional-steps.md"
+        },
+        {
+          "slug": "redux-traditional-ts",
+          "title": "Redux Traditional Steps (TypeScript)",
+          "description": "Step-by-step TypeScript",
+          "file": "Redux/redux-traditional-ts.md"
         },
         {
           "slug": "redux-toolkit",
@@ -371,52 +551,16 @@
           "file": "Redux/redux-toolkit-ts.md"
         },
         {
-          "slug": "redux-traditional-steps",
-          "title": "Redux Traditional Steps (JavaScript)",
-          "description": "Step-by-step JS",
-          "file": "Redux/redux-traditional-steps.md"
+          "slug": "redux-vs-rtk",
+          "title": "Comparación: Redux vs Redux Toolkit (RTK)",
+          "description": "Side-by-side comparison",
+          "file": "Redux/redux-vs-rtk.md"
         },
         {
-          "slug": "redux-traditional-ts",
-          "title": "Redux Traditional Steps (TypeScript)",
-          "description": "Step-by-step TypeScript",
-          "file": "Redux/redux-traditional-ts.md"
-        }
-      ]
-    },
-    {
-      "name": "TypeScript",
-      "icon": "/typescript.png",
-      "notes": [
-        {
-          "slug": "decorators",
-          "title": "Decorators",
-          "description": "Class, method, property, parameter decorators",
-          "file": "TypeScript/decorators.md"
-        },
-        {
-          "slug": "generics",
-          "title": "Generics",
-          "description": "Generic functions, classes, constraints",
-          "file": "TypeScript/generics.md"
-        },
-        {
-          "slug": "type-operators",
-          "title": "Type Operators",
-          "description": "typeof, keyof, indexed access, conditional, mapped, template literal, infer",
-          "file": "TypeScript/type-operators.md"
-        },
-        {
-          "slug": "classes",
-          "title": "TypeScript Classes",
-          "description": "Access modifiers, inheritance, abstract classes, singleton",
-          "file": "TypeScript/classes.md"
-        },
-        {
-          "slug": "tipos",
-          "title": "TypeScript Fundamentals",
-          "description": "Types, interfaces, type aliases, utility types, React + TS",
-          "file": "TypeScript/tipos.md"
+          "slug": "index",
+          "title": "Redux Notes - Index",
+          "description": "",
+          "file": "Redux/index.md"
         }
       ]
     },
@@ -429,23 +573,295 @@
           "title": "Zustand",
           "description": "Store creation, Immer, selectors, async actions",
           "file": "Zustand/zustand.md"
+        },
+        {
+          "slug": "index",
+          "title": "Zustand Notes - Index",
+          "description": "",
+          "file": "Zustand/index.md"
         }
       ]
     }
   ],
   "flatList": [
     {
-      "slug": "auth",
-      "title": "Authorization and Authentication",
-      "description": "JWT, bcrypt, sesiones vs tokens, OAuth",
-      "file": "BackendNotes/auth.md",
-      "category": "BackendNotes"
+      "slug": "fundamentals",
+      "title": "JavaScript Fundamentals",
+      "description": "Types, variables, hoisting, TDZ, scope",
+      "file": "JavaScript/fundamentals.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "operators",
+      "title": "Operators",
+      "description": "Arithmetic, comparison, logical, ternary, optional chaining, nullish coalescing, short-circuit, truthy/falsy",
+      "file": "JavaScript/operators.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "control-flow",
+      "title": "Control Flow",
+      "description": "Conditionals, loops, iterators",
+      "file": "JavaScript/control-flow.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "strings",
+      "title": "Strings & String Methods",
+      "description": "String methods, template literals, concatenation",
+      "file": "JavaScript/strings.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "arrays",
+      "title": "Arrays",
+      "description": "Creating, accessing, modifying, instance methods, multidimensional, iteration, map/filter/reduce",
+      "file": "JavaScript/arrays.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "functions",
+      "title": "Functions",
+      "description": "Declarations, expressions, arrow functions, this, call/apply/bind",
+      "file": "JavaScript/functions.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "objects",
+      "title": "Objects & Copying",
+      "description": "Object literals, destructuring, spread, shallow/deep copy",
+      "file": "JavaScript/objects.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "closures",
+      "title": "Closures",
+      "description": "Closure concept and examples",
+      "file": "JavaScript/closures.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "prototypes-classes",
+      "title": "Prototypes & Classes",
+      "description": "Prototype chain, OOP, classes, inheritance",
+      "file": "JavaScript/prototypes-classes.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "sets-maps-symbols",
+      "title": "Sets, Maps & Symbols",
+      "description": "Set, Map, WeakMap, WeakSet, Symbol",
+      "file": "JavaScript/sets-maps-symbols.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "event-loop",
+      "title": "Event Loop & Async Patterns",
+      "description": "Event loop, microtasks, macrotasks",
+      "file": "JavaScript/event-loop.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "callbacks",
+      "title": "JavaScript Callback Function",
+      "description": "Synchronous, asynchronous callbacks, callback hell",
+      "file": "JavaScript/callbacks.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "promises",
+      "title": "JavaScript Promises",
+      "description": "Promises, Promise.all, Fetch API",
+      "file": "JavaScript/promises.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "async-await",
+      "title": "Async / Await",
+      "description": "Async/await syntax, fetch API",
+      "file": "JavaScript/async-await.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "browser-apis",
+      "title": "Browser APIs & Storage",
+      "description": "Cookies, localStorage, sessionStorage, IndexedDB, DOM",
+      "file": "JavaScript/browser-apis.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "modules",
+      "title": "JavaScript Modules",
+      "description": "ES Modules, CommonJS, export/import, require",
+      "file": "JavaScript/modules.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "index",
+      "title": "JavaScript Notes - Index",
+      "description": "",
+      "file": "JavaScript/index.md",
+      "category": "JavaScript"
+    },
+    {
+      "slug": "tipos",
+      "title": "TypeScript Fundamentals",
+      "description": "Types, interfaces, type aliases, utility types, React + TS",
+      "file": "TypeScript/tipos.md",
+      "category": "TypeScript"
+    },
+    {
+      "slug": "type-operators",
+      "title": "Type Operators",
+      "description": "typeof, keyof, indexed access, conditional, mapped, template literal, infer",
+      "file": "TypeScript/type-operators.md",
+      "category": "TypeScript"
+    },
+    {
+      "slug": "generics",
+      "title": "Generics",
+      "description": "Generic functions, classes, constraints",
+      "file": "TypeScript/generics.md",
+      "category": "TypeScript"
+    },
+    {
+      "slug": "classes",
+      "title": "TypeScript Classes",
+      "description": "Access modifiers, inheritance, abstract classes, singleton",
+      "file": "TypeScript/classes.md",
+      "category": "TypeScript"
+    },
+    {
+      "slug": "decorators",
+      "title": "Decorators",
+      "description": "Class, method, property, parameter decorators",
+      "file": "TypeScript/decorators.md",
+      "category": "TypeScript"
+    },
+    {
+      "slug": "index",
+      "title": "TypeScript Notes - Index",
+      "description": "",
+      "file": "TypeScript/index.md",
+      "category": "TypeScript"
+    },
+    {
+      "slug": "fundamentals",
+      "title": "React Fundamentals",
+      "description": "JSX, components, props, Virtual DOM, PropTypes",
+      "file": "React/fundamentals.md",
+      "category": "React"
+    },
+    {
+      "slug": "hooks",
+      "title": "React Hooks",
+      "description": "useState, useEffect, useRef, useCallback, useMemo, useReducer, custom hooks",
+      "file": "React/hooks.md",
+      "category": "React"
+    },
+    {
+      "slug": "context-api",
+      "title": "React Context API",
+      "description": "createContext, Provider, useContext",
+      "file": "React/context-api.md",
+      "category": "React"
+    },
+    {
+      "slug": "controlled-vs-uncontrolled",
+      "title": "Controlled vs Uncontrolled Components",
+      "description": "",
+      "file": "React/controlled-vs-uncontrolled.md",
+      "category": "React"
+    },
+    {
+      "slug": "memo",
+      "title": "React.memo",
+      "description": "Component memoization",
+      "file": "React/memo.md",
+      "category": "React"
+    },
+    {
+      "slug": "react-router-dom",
+      "title": "React Router DOM",
+      "description": "Routes, navigation, hooks",
+      "file": "React/react-router-dom.md",
+      "category": "React"
+    },
+    {
+      "slug": "class-components",
+      "title": "Class Components React",
+      "description": "State, props, lifecycle methods",
+      "file": "React/class-components.md",
+      "category": "React"
+    },
+    {
+      "slug": "index",
+      "title": "React Notes - Index",
+      "description": "",
+      "file": "React/index.md",
+      "category": "React"
+    },
+    {
+      "slug": "use-memo",
+      "title": "useMemo Hook",
+      "description": "",
+      "file": "React/use-memo.md",
+      "category": "React"
+    },
+    {
+      "slug": "index",
+      "title": "Docker Notes - Index",
+      "description": "Docker notes overview",
+      "file": "Docker/index.md",
+      "category": "Docker"
+    },
+    {
+      "slug": "01-docker-intro",
+      "title": "Docker — Introducción",
+      "description": "Conceptos básicos, imágenes y contenedores",
+      "file": "Docker/01-docker-intro.md",
+      "category": "Docker"
+    },
+    {
+      "slug": "02-dockerfile",
+      "title": "Docker — Dockerfile",
+      "description": "Creación y configuración de Dockerfiles",
+      "file": "Docker/02-dockerfile.md",
+      "category": "Docker"
+    },
+    {
+      "slug": "03-docker-run",
+      "title": "Docker — Ejecutar contenedores",
+      "description": "docker run, puertos, variables de entorno",
+      "file": "Docker/03-docker-run.md",
+      "category": "Docker"
+    },
+    {
+      "slug": "04-docker-comandos",
+      "title": "Docker — Comandos esenciales",
+      "description": "docker ps, stop, start, logs, rm",
+      "file": "Docker/04-docker-comandos.md",
+      "category": "Docker"
+    },
+    {
+      "slug": "05-docker-avanzado",
+      "title": "Docker — Avanzado",
+      "description": "Volúmenes, redes, docker-compose, optimización",
+      "file": "Docker/05-docker-avanzado.md",
+      "category": "Docker"
     },
     {
       "slug": "index",
       "title": "Backend Notes - Index",
       "description": "Node.js, bases de datos, autenticación, testing, producción",
       "file": "BackendNotes/index.md",
+      "category": "BackendNotes"
+    },
+    {
+      "slug": "auth",
+      "title": "Authorization and Authentication",
+      "description": "JWT, bcrypt, sesiones vs tokens, OAuth",
+      "file": "BackendNotes/auth.md",
       "category": "BackendNotes"
     },
     {
@@ -631,206 +1047,108 @@
       "category": "BackendNotes"
     },
     {
-      "slug": "arrays",
-      "title": "Arrays",
-      "description": "Creating, accessing, modifying, instance methods, multidimensional, iteration, map/filter/reduce",
-      "file": "JavaScript/arrays.md",
-      "category": "JavaScript"
+      "slug": "docker-notas",
+      "title": "Docker",
+      "description": "",
+      "file": "BackendNotes/docker-notas.md",
+      "category": "BackendNotes"
     },
     {
-      "slug": "async-await",
-      "title": "Async / Await",
-      "description": "Async/await syntax, fetch API",
-      "file": "JavaScript/async-await.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "browser-apis",
-      "title": "Browser APIs & Storage",
-      "description": "Cookies, localStorage, sessionStorage, IndexedDB, DOM",
-      "file": "JavaScript/browser-apis.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "closures",
-      "title": "Closures",
-      "description": "Closure concept and examples",
-      "file": "JavaScript/closures.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "control-flow",
-      "title": "Control Flow",
-      "description": "Conditionals, loops, iterators",
-      "file": "JavaScript/control-flow.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "event-loop",
-      "title": "Event Loop & Async Patterns",
-      "description": "Event loop, microtasks, macrotasks",
-      "file": "JavaScript/event-loop.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "functions",
-      "title": "Functions",
-      "description": "Declarations, expressions, arrow functions, this, call/apply/bind",
-      "file": "JavaScript/functions.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "callbacks",
-      "title": "JavaScript Callback Function",
-      "description": "Synchronous, asynchronous callbacks, callback hell",
-      "file": "JavaScript/callbacks.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "fundamentals",
-      "title": "JavaScript Fundamentals",
-      "description": "Types, variables, hoisting, TDZ, scope",
-      "file": "JavaScript/fundamentals.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "modules",
-      "title": "JavaScript Modules",
-      "description": "ES Modules, CommonJS, export/import, require",
-      "file": "JavaScript/modules.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "promises",
-      "title": "JavaScript Promises",
-      "description": "Promises, Promise.all, Fetch API",
-      "file": "JavaScript/promises.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "objects",
-      "title": "Objects & Copying",
-      "description": "Object literals, destructuring, spread, shallow/deep copy",
-      "file": "JavaScript/objects.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "operators",
-      "title": "Operators",
-      "description": "Arithmetic, comparison, logical, ternary, optional chaining, nullish coalescing, short-circuit, truthy/falsy",
-      "file": "JavaScript/operators.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "prototypes-classes",
-      "title": "Prototypes & Classes",
-      "description": "Prototype chain, OOP, classes, inheritance",
-      "file": "JavaScript/prototypes-classes.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "sets-maps-symbols",
-      "title": "Sets, Maps & Symbols",
-      "description": "Set, Map, WeakMap, WeakSet, Symbol",
-      "file": "JavaScript/sets-maps-symbols.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "strings",
-      "title": "Strings & String Methods",
-      "description": "String methods, template literals, concatenation",
-      "file": "JavaScript/strings.md",
-      "category": "JavaScript"
-    },
-    {
-      "slug": "nextjs",
-      "title": "Next.js",
-      "description": "Pages Router, App Router, commands",
-      "file": "NextJS/nextjs.md",
+      "slug": "index",
+      "title": "Next.js Notes - Index",
+      "description": "Next.js 14: App Router, Server Components, API routes, Image optimization, middleware",
+      "file": "NextJS/index.md",
       "category": "NextJS"
     },
     {
-      "slug": "class-components",
-      "title": "Class Components React",
-      "description": "State, props, lifecycle methods",
-      "file": "React/class-components.md",
-      "category": "React"
+      "slug": "01-nextjs",
+      "title": "Next.js",
+      "description": "Conceptos básicos, instalación, creación de proyectos",
+      "file": "NextJS/01-nextjs.md",
+      "category": "NextJS"
     },
     {
-      "slug": "controlled-vs-uncontrolled",
-      "title": "Controlled vs Uncontrolled Components",
-      "description": "",
-      "file": "React/controlled-vs-uncontrolled.md",
-      "category": "React"
+      "slug": "02-app-router",
+      "title": "App Router",
+      "description": "App Router, layouts, templates, linking",
+      "file": "NextJS/02-app-router.md",
+      "category": "NextJS"
     },
     {
-      "slug": "context-api",
-      "title": "React Context API",
-      "description": "createContext, Provider, useContext",
-      "file": "React/context-api.md",
-      "category": "React"
+      "slug": "03-routing",
+      "title": "Routing",
+      "description": "Routing, navegación, Link, useRouter",
+      "file": "NextJS/03-routing.md",
+      "category": "NextJS"
     },
     {
-      "slug": "fundamentals",
-      "title": "React Fundamentals",
-      "description": "JSX, components, props, Virtual DOM, PropTypes",
-      "file": "React/fundamentals.md",
-      "category": "React"
+      "slug": "04-server-components",
+      "title": "Server Components",
+      "description": "RSC, server-side rendering",
+      "file": "NextJS/04-server-components.md",
+      "category": "NextJS"
     },
     {
-      "slug": "hooks",
-      "title": "React Hooks",
-      "description": "useState, useEffect, useRef, useCallback, useMemo, useReducer, custom hooks",
-      "file": "React/hooks.md",
-      "category": "React"
+      "slug": "05-client-components",
+      "title": "Client Components",
+      "description": "'use client', interactividad",
+      "file": "NextJS/05-client-components.md",
+      "category": "NextJS"
     },
     {
-      "slug": "react-router-dom",
-      "title": "React Router DOM",
-      "description": "Routes, navigation, hooks",
-      "file": "React/react-router-dom.md",
-      "category": "React"
+      "slug": "06-data-fetching",
+      "title": "Data Fetching en Server Components",
+      "description": "fetch, caching, revalidación",
+      "file": "NextJS/06-data-fetching.md",
+      "category": "NextJS"
     },
     {
-      "slug": "memo",
-      "title": "React.memo",
-      "description": "Component memoization",
-      "file": "React/memo.md",
-      "category": "React"
+      "slug": "07-api-routes",
+      "title": "API Routes (Route Handlers)",
+      "description": "Route Handlers, rutas dinámicas",
+      "file": "NextJS/07-api-routes.md",
+      "category": "NextJS"
     },
     {
-      "slug": "use-memo",
-      "title": "useMemo Hook",
-      "description": "",
-      "file": "React/use-memo.md",
-      "category": "React"
+      "slug": "08-image-component",
+      "title": "Image Component",
+      "description": "Optimización de imágenes",
+      "file": "NextJS/08-image-component.md",
+      "category": "NextJS"
     },
     {
-      "slug": "redux-vs-rtk",
-      "title": "Comparación: Redux vs Redux Toolkit (RTK)",
-      "description": "Side-by-side comparison",
-      "file": "Redux/redux-vs-rtk.md",
-      "category": "Redux"
+      "slug": "09-metadata",
+      "title": "Metadata",
+      "description": "SEO, metadata API, Open Graph",
+      "file": "NextJS/09-metadata.md",
+      "category": "NextJS"
+    },
+    {
+      "slug": "10-middleware",
+      "title": "Middleware",
+      "description": "Middleware, matchers, redirects",
+      "file": "NextJS/10-middleware.md",
+      "category": "NextJS"
+    },
+    {
+      "slug": "11-public-folder",
+      "title": "Public Folder",
+      "description": "Archivos estáticos",
+      "file": "NextJS/11-public-folder.md",
+      "category": "NextJS"
+    },
+    {
+      "slug": "temas-pendientes",
+      "title": "Temas pendientes — Next.js",
+      "description": "Temas por profundizar",
+      "file": "NextJS/temas-pendientes.md",
+      "category": "NextJS"
     },
     {
       "slug": "traditional-redux",
       "title": "Redux",
       "description": "Core concepts, theory",
       "file": "Redux/traditional-redux.md",
-      "category": "Redux"
-    },
-    {
-      "slug": "redux-toolkit",
-      "title": "Redux Toolkit (RTK)",
-      "description": "configureStore, createSlice, createAsyncThunk",
-      "file": "Redux/redux-toolkit.md",
-      "category": "Redux"
-    },
-    {
-      "slug": "redux-toolkit-ts",
-      "title": "Redux Toolkit TypeScript",
-      "description": "TypeScript setup",
-      "file": "Redux/redux-toolkit-ts.md",
       "category": "Redux"
     },
     {
@@ -848,45 +1166,45 @@
       "category": "Redux"
     },
     {
-      "slug": "decorators",
-      "title": "Decorators",
-      "description": "Class, method, property, parameter decorators",
-      "file": "TypeScript/decorators.md",
-      "category": "TypeScript"
+      "slug": "redux-toolkit",
+      "title": "Redux Toolkit (RTK)",
+      "description": "configureStore, createSlice, createAsyncThunk",
+      "file": "Redux/redux-toolkit.md",
+      "category": "Redux"
     },
     {
-      "slug": "generics",
-      "title": "Generics",
-      "description": "Generic functions, classes, constraints",
-      "file": "TypeScript/generics.md",
-      "category": "TypeScript"
+      "slug": "redux-toolkit-ts",
+      "title": "Redux Toolkit TypeScript",
+      "description": "TypeScript setup",
+      "file": "Redux/redux-toolkit-ts.md",
+      "category": "Redux"
     },
     {
-      "slug": "type-operators",
-      "title": "Type Operators",
-      "description": "typeof, keyof, indexed access, conditional, mapped, template literal, infer",
-      "file": "TypeScript/type-operators.md",
-      "category": "TypeScript"
+      "slug": "redux-vs-rtk",
+      "title": "Comparación: Redux vs Redux Toolkit (RTK)",
+      "description": "Side-by-side comparison",
+      "file": "Redux/redux-vs-rtk.md",
+      "category": "Redux"
     },
     {
-      "slug": "classes",
-      "title": "TypeScript Classes",
-      "description": "Access modifiers, inheritance, abstract classes, singleton",
-      "file": "TypeScript/classes.md",
-      "category": "TypeScript"
-    },
-    {
-      "slug": "tipos",
-      "title": "TypeScript Fundamentals",
-      "description": "Types, interfaces, type aliases, utility types, React + TS",
-      "file": "TypeScript/tipos.md",
-      "category": "TypeScript"
+      "slug": "index",
+      "title": "Redux Notes - Index",
+      "description": "",
+      "file": "Redux/index.md",
+      "category": "Redux"
     },
     {
       "slug": "zustand",
       "title": "Zustand",
       "description": "Store creation, Immer, selectors, async actions",
       "file": "Zustand/zustand.md",
+      "category": "Zustand"
+    },
+    {
+      "slug": "index",
+      "title": "Zustand Notes - Index",
+      "description": "",
+      "file": "Zustand/index.md",
       "category": "Zustand"
     }
   ]

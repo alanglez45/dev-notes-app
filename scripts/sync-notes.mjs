@@ -14,26 +14,30 @@ const iconMap = {
   NextJS: '/nextjs.png',
   Zustand: '/zustand.svg',
   BackendNotes: '/nodejs.png',
+  Docker: '/docker.png',
 }
 
 function parseIndexMd(indexPath) {
   const descMap = {}
+  const orderMap = {}
+  const categoryOrder = []
   try {
     const content = fs.readFileSync(indexPath, 'utf-8')
     const lines = content.split('\n')
-    let currentCategory = ''
+    let noteIndex = 0
     for (const line of lines) {
       const catMatch = line.match(/^##\s+(.+)/)
-      if (catMatch) currentCategory = catMatch[1].trim()
+      if (catMatch) categoryOrder.push(catMatch[1].trim())
       const entryMatch = line.match(/^-\s+\[(.+)\]\((.+?\.md)\)\s*(?:-\s*(.+))?/)
       if (entryMatch) {
         const filePath = entryMatch[2].trim()
         const desc = entryMatch[3] ? entryMatch[3].trim() : ''
         descMap[filePath] = desc
+        orderMap[filePath] = noteIndex++
       }
     }
   } catch { }
-  return descMap
+  return { descMap, orderMap, categoryOrder }
 }
 
 function getTitleFromMarkdown(filePath) {
@@ -52,7 +56,7 @@ function syncNotes() {
     process.exit(1)
   }
 
-  const descMap = parseIndexMd(path.join(notasDir, 'index.md'))
+  const { descMap, orderMap, categoryOrder } = parseIndexMd(path.join(notasDir, 'index.md'))
   const excludeDirs = new Set(['notely', 'node_modules', '.git', 'assets'])
   const categories = []
 
@@ -76,11 +80,12 @@ function syncNotes() {
       notes.push({ slug, title, description, file: relPath })
     }
 
-    notes.sort((a, b) => a.title.localeCompare(b.title))
+    notes.sort((a, b) => (orderMap[a.file] ?? Infinity) - (orderMap[b.file] ?? Infinity) || a.title.localeCompare(b.title))
     categories.push({ name: entry.name, icon: iconMap[entry.name] || '', notes })
   }
 
-  categories.sort((a, b) => a.name.localeCompare(b.name))
+  const categoryOrderMap = new Map(categoryOrder.map((name, i) => [name, i]))
+  categories.sort((a, b) => (categoryOrderMap.get(a.name) ?? Infinity) - (categoryOrderMap.get(b.name) ?? Infinity) || a.name.localeCompare(b.name))
 
   const flatList = categories.flatMap(c =>
     c.notes.map(n => ({ ...n, category: c.name }))

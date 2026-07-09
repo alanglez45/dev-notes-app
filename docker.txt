@@ -1,0 +1,248 @@
+Crear Docker file
+
+Empieza con una imagen base
+FROM node:22-alpine
+
+¿Qué hace?
+Descarga una imagen que ya tiene Node.js 22 instalado.
+alpine hace que la imagen sea ligera.
+
+
+Define dónde vivirá tu aplicación
+WORKDIR /app
+
+Qué hace?
+Crea la carpeta /app dentro del contenedor (si no existe).
+Todas las instrucciones siguientes se ejecutarán desde ahí.
+No necesitas tener una carpeta app en tu proyecto.
+
+Copia los archivos de dependencias
+COPY package*.json .
+
+¿Qué hace?
+Copia package.json y package-lock.json al contenedor.
+Se hace primero para aprovechar la caché de Docker.
+
+Instala las dependencias
+RUN npm install
+
+¿Qué hace?
+Instala todas las dependencias dentro del contenedor.
+Crea la carpeta node_modules ahí
+
+Copia el resto del proyecto
+COPY . .
+
+Qué hace?
+Copia todo tu código (src, routes, controllers, etc.) al contenedor.
+
+
+Expón el puerto
+EXPOSE 3000
+
+¿Qué hace?
+Indica que la aplicación utilizará el puerto 3000.
+No publica el puerto; solo lo documenta para Docker.
+
+
+Inicia la aplicación
+CMD ["npm", "start"]
+¿Qué hace?
+Cuando el contenedor se inicie, ejecutará npm start.
+
+
+FROM node:22-alpine
+
+WORKDIR /app
+
+COPY package*.json .
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
+
+cada palabra del comando se convierte en un elemento del arreglo.
+
+............
+Extensiones de vscode
+Docker
+Container tools
+
+Una vez que tienes el Dockerfile, el siguiente paso es construir una imagen.
+¿Qué es docker build?
+docker build le dice a Docker:
+"Lee mi Dockerfile y crea una imagen con esas instrucciones."
+Por ejemplo:
+docker build -t mi-api .
+
+
+docker build → Construye una imagen.
+-t mi-api → Le pone el nombre (tag) mi-api.
+. → El contexto de construcción. Significa: usa la carpeta actual (donde está el Dockerfile y el proyecto).
+
+
+¿Qué es una imagen?
+Piensa en una imagen como una plantilla o molde.
+📦 Imagen = la receta completa de tu aplicación.
+▶️ Contenedor = una instancia en ejecución creada a partir de esa receta.
+Puedes tener:
+1 imagen.
+10 contenedores creados desde esa misma imagen.
+Ver las imágenes
+Después del build, puedes ver las imágenes disponibles con:
+docker images
+Verás algo similar a:
+REPOSITORY   TAG      IMAGE ID
+mi-api       latest   a1b2c3d4e5
+En ese momento ya tienes la imagen lista. El siguiente paso será crear y ejecutar un contenedor con:
+docker run ...
+
+
+Imagen = el plano, la plantilla o la receta de tu aplicación.
+Contiene Node.js, tu código, las dependencias y la configuración.
+Es inmutable: una vez creada, no cambia.
+🚀 Contenedor = una instancia en ejecución de esa imagen.
+Es la aplicación corriendo.
+Tiene su propia memoria, procesos y sistema de archivos.
+
+
+Por eso el flujo siempre es:
+Escribes el Dockerfile.
+Ejecutas docker build → obtienes una imagen.
+Ejecutas docker run → creas un contenedor a partir de esa imagen.
+Una diferencia importante es que si modificas el código fuente, la imagen no se actualiza automáticamente. Debes volver a ejecutar docker build para generar una nueva imagen con esos cambios y luego crear un nuevo contenedor a partir de ella.
+
+
+
+¿Qué hace docker run?
+docker run significa:
+"Crea un contenedor a partir de una imagen y ejecútalo."
+Por ejemplo:
+docker run mi-api
+
+
+Docker hace lo siguiente:
+Busca la imagen mi-api.
+Crea un contenedor nuevo.
+Ejecuta el comando definido en CMD (por ejemplo npm start).
+Tu API empieza a correr.
+
+
+Un ejemplo más real
+Normalmente verás algo así:
+docker run -d -p 3000:3000 --name api mi-api
+Vamos parte por parte.
+-d
+-d
+Significa detached.
+Ejecuta el contenedor en segundo plano.
+Sin -d, verás los logs directamente en la terminal y esa terminal quedará ocupada.
+Con -d, recuperas el control de la terminal inmediatamente.
+-p
+-p 3000:3000
+Es uno de los parámetros más importantes.
+Su formato es:
+-p <puerto_de_tu_computadora>:<puerto_del_contenedor>
+Entonces:
+-p 3000:3000
+significa:
+Puerto 3000 de tu computadora.
+Se conecta al puerto 3000 dentro del contenedor.
+Si tu Express escucha así:
+app.listen(3000);
+podrás entrar desde tu navegador a:
+http://localhost:3000
+También podrías hacer:
+-p 8080:3000
+Eso significa:
+Tu computadora usa el puerto 8080.
+El contenedor sigue usando el 3000.
+Entrarías a:
+http://localhost:8080
+--name
+--name api
+Le pone un nombre al contenedor.
+En lugar de llamarse algo como:
+happy_einstein
+se llamará:
+api
+Eso facilita administrarlo.
+El último valor
+mi-api
+Es la imagen desde la que se creará el contenedor.
+Entonces...
+docker run -d -p 3000:3000 --name api mi-api
+significa:
+"Crea un contenedor llamado api, usando la imagen mi-api, ejecuta la aplicación en segundo plano y conecta el puerto 3000 del contenedor con el puerto 3000 de mi computadora."
+
+
+
+Docker ps
+Docker stop
+Docker start
+Docker logs
+
+
++++++++
+Docker ps -a
+
+
+Docker cobra 
+
+Opensource alternativas
+Podman
+Colima
+
+
+
+Sí corres docker run y no encuentra la imagen localmente, la busca en docker hub
+
+Docker rm ID
+
+Docker  run  --rm  -p 5002:3000 02-node-web
+
+La app corre en Docker en el puerto 3000 (yo no puedo conectarme a ese puerto) pero si puedo conectarme al 5002 que hace referencia al 3000 de docker 
+
+Logs de una:
+Docker ps
+Docker logs id
+
+Logs en tiempo real
+
+docker logs -f id 
+
+docker ps
+Muestra contenedores en funcionamiento 
+
+
+docker ps -a 
+Muestra todos los contenedores 
+
+
+Dentro de la app de docker, dentro del contenedor se pueden ver los archivos en la parte de files
+
+Ahí aparece la carpeta /app que se creo con la imagen
+
+
+Docker images
+Lista imágenes en local y las descargadas
+
+Inyectar variable de entorno desde fuera
+
+Docker run -d -p 5005:3000 -e SALUDO="Hola" --name web-env 02-node-web
+
+
+Docker system df
+
+
+
+Docker system prune -a 
+Borra las imágenes sin usar
+
+
+
+Dockerignore

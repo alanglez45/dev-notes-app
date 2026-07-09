@@ -7,6 +7,7 @@ import { useTheme } from '../hooks/useTheme'
 
 interface NoteViewerProps {
   content: string
+  dark?: boolean
 }
 
 function getLang(className?: string): string {
@@ -104,8 +105,9 @@ function CodeRenderer({ dark, ...props }: React.ComponentPropsWithoutRef<'code'>
   )
 }
 
-export function NoteViewer({ content }: NoteViewerProps) {
-  const { dark } = useTheme()
+export function NoteViewer({ content, dark: forceDark }: NoteViewerProps) {
+  const { dark: themeDark } = useTheme()
+  const dark = forceDark ?? themeDark
   const components = useMemo<Components>(() => ({
     a: LinkRenderer,
     img: ImageRenderer,

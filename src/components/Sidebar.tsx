@@ -1,34 +1,22 @@
-import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { Category } from '../types'
 
 interface SidebarProps {
   categories: Category[]
-  activeNote: string | undefined
+  activeCategory?: string
   onHome: () => void
   mobileOpen?: boolean
   onCloseMobile?: () => void
 }
 
-export function Sidebar({ categories, activeNote, onHome, mobileOpen, onCloseMobile }: SidebarProps) {
+export function Sidebar({ categories, activeCategory, onHome, mobileOpen, onCloseMobile }: SidebarProps) {
   const navigate = useNavigate()
-  const [expanded, setExpanded] = useState<Record<string, boolean>>(() => {
-    const init: Record<string, boolean> = {}
-    for (const cat of categories) {
-      init[cat.name] = cat.notes.some((n) => n.file === activeNote)
-    }
-    return init
-  })
-
-  const toggle = (name: string) => {
-    setExpanded((prev) => ({ ...prev, [name]: !prev[name] }))
-  }
 
   const drawer = (
     <nav className="sidebar">
       <div className="sidebar-category">
         <button
-          className="sidebar-category-header"
+          className={`sidebar-category-header${!activeCategory ? ' active' : ''}`}
           onClick={onHome}
         >
           <span className='icon'>
@@ -40,34 +28,17 @@ export function Sidebar({ categories, activeNote, onHome, mobileOpen, onCloseMob
       {categories.map((cat) => (
         <div key={cat.name} className="sidebar-category">
           <button
-            className={`sidebar-category-header ${expanded[cat.name] ? 'expanded' : ''}`}
-            onClick={() => toggle(cat.name)}
+            className={`sidebar-category-header${cat.name === activeCategory ? ' active' : ''}`}
+            onClick={() => {
+              navigate(`/${cat.name}`)
+              onCloseMobile?.()
+            }}
           >
             <span className='icon'>
               <img src={cat.icon} alt={cat.name} />
             </span>
             {cat.name}
-            <span className="note-count">{cat.notes.length}</span>
           </button>
-          {expanded[cat.name] && (
-            <ul className="sidebar-notes">
-              {cat.notes.map((note) => (
-                <li
-                  key={note.file}
-                  className={`sidebar-note ${note.file === activeNote ? 'active' : ''}`}
-                  onClick={() => {
-                    navigate(`/${cat.name}/${note.slug}`)
-                    onCloseMobile?.()
-                  }}
-                >
-                  <span className="sidebar-note-title">{note.title}</span>
-                  {note.description && (
-                    <span className="sidebar-note-desc">{note.description}</span>
-                  )}
-                </li>
-              ))}
-            </ul>
-          )}
         </div>
       ))}
     </nav>

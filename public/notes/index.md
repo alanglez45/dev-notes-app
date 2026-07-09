@@ -44,7 +44,27 @@
 - [Zustand](Zustand/zustand.md) - Store creation, Immer, selectors, async actions
 
 ## Frameworks
-- [Next.js](NextJS/nextjs.md) - Pages Router, App Router, commands
+- [Next.js](NextJS/index.md) - Next.js 14: App Router, Server Components, API routes, Image optimization, middleware
+- [Introducción](NextJS/01-nextjs.md) - Conceptos básicos, instalación, creación de proyectos
+- [App Router](NextJS/02-app-router.md) - App Router, layouts, templates, linking
+- [Routing](NextJS/03-routing.md) - Routing, navegación, Link, useRouter
+- [Server Components](NextJS/04-server-components.md) - RSC, server-side rendering
+- [Client Components](NextJS/05-client-components.md) - 'use client', interactividad
+- [Data Fetching](NextJS/06-data-fetching.md) - fetch, caching, revalidación
+- [API Routes](NextJS/07-api-routes.md) - Route Handlers, rutas dinámicas
+- [Image Component](NextJS/08-image-component.md) - Optimización de imágenes
+- [Metadata](NextJS/09-metadata.md) - SEO, metadata API, Open Graph
+- [Middleware](NextJS/10-middleware.md) - Middleware, matchers, redirects
+- [Public Folder](NextJS/11-public-folder.md) - Archivos estáticos
+- [Temas pendientes](NextJS/temas-pendientes.md) - Temas por profundizar
+
+## Docker
+- [Index](Docker/index.md) - Docker notes overview
+- [Introducción](Docker/01-docker-intro.md) - Conceptos básicos, imágenes y contenedores
+- [Dockerfile](Docker/02-dockerfile.md) - Creación y configuración de Dockerfiles
+- [Ejecutar contenedores](Docker/03-docker-run.md) - docker run, puertos, variables de entorno
+- [Comandos esenciales](Docker/04-docker-comandos.md) - docker ps, stop, start, logs, rm
+- [Avanzado](Docker/05-docker-avanzado.md) - Volúmenes, redes, docker-compose, optimización
 
 ## Node.js
 - [Backend Notes](BackendNotes/index.md) - Node.js, bases de datos, autenticación, testing, producción
