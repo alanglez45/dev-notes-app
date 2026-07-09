@@ -18,3 +18,7 @@
 - [Metadata](09-metadata.md) - Metadata API, generateMetadata, Open Graph
 - [Middleware](10-middleware.md) - Middleware, matcher, autenticación, redirecciones
 - [Public Folder](11-public-folder.md) - Archivos estáticos, favicon, assets
+
+## Rendering & Data
+- [Client Data Fetching](12-client-data-fetching.md) - Fetch en client components, useState/useEffect vs React Query, tradeoffs
+- [Static & Dynamic Rendering](13-static-dynamic-rendering.md) - SSG, ISR, SSR, cache strategies

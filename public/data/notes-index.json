@@ -513,6 +513,18 @@
           "title": "Temas pendientes — Next.js",
           "description": "Temas por profundizar",
           "file": "NextJS/temas-pendientes.md"
+        },
+        {
+          "slug": "12-client-data-fetching",
+          "title": "Data Fetching en el Cliente",
+          "description": "",
+          "file": "NextJS/12-client-data-fetching.md"
+        },
+        {
+          "slug": "13-static-dynamic-rendering",
+          "title": "Static y Dynamic Rendering",
+          "description": "",
+          "file": "NextJS/13-static-dynamic-rendering.md"
         }
       ]
     },
@@ -1142,6 +1154,20 @@
       "title": "Temas pendientes — Next.js",
       "description": "Temas por profundizar",
       "file": "NextJS/temas-pendientes.md",
+      "category": "NextJS"
+    },
+    {
+      "slug": "12-client-data-fetching",
+      "title": "Data Fetching en el Cliente",
+      "description": "",
+      "file": "NextJS/12-client-data-fetching.md",
+      "category": "NextJS"
+    },
+    {
+      "slug": "13-static-dynamic-rendering",
+      "title": "Static y Dynamic Rendering",
+      "description": "",
+      "file": "NextJS/13-static-dynamic-rendering.md",
       "category": "NextJS"
     },
     {

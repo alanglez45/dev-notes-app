@@ -88,3 +88,82 @@ export default async function UserPage({ params }: { params: { userId: string } 
     return <div>Usuario: {user.name}</div>;
 }
 ```
+
+## Estructura de proyecto
+
+El App Router necesita una carpeta `app`, pero puede estar dentro de `src/`.
+
+### Sin `src/` (estructura plana)
+
+```
+mi-proyecto/
+├── app/
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── loading.tsx
+│   ├── not-found.tsx
+│   ├── robots.ts
+│   ├── sitemap.ts
+│   ├── contacto/
+│   │   └── page.tsx
+│   ├── precios/
+│   │   └── page.tsx
+│   └── api/
+│       └── contacto/
+│           └── route.ts
+│
+├── components/
+├── hooks/
+├── lib/
+├── services/
+├── utils/
+├── public/
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+└── .env
+```
+
+### Con `src/` (recomendado)
+
+```
+mi-proyecto/
+├── src/
+│   ├── app/
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── loading.tsx
+│   │   ├── not-found.tsx
+│   │   ├── robots.ts
+│   │   ├── sitemap.ts
+│   │   ├── contacto/
+│   │   │   └── page.tsx
+│   │   ├── precios/
+│   │   │   └── page.tsx
+│   │   └── api/
+│   │       └── contacto/
+│   │           └── route.ts
+│   │
+│   ├── components/
+│   ├── features/
+│   ├── hooks/
+│   ├── lib/
+│   ├── services/
+│   ├── types/
+│   ├── utils/
+│   └── styles/
+│
+├── public/
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+└── .env
+```
+
+### Global styles
+
+Los estilos globales se definen en `globals.css` y se importan únicamente en el layout raíz (`app/layout.tsx`). No se pueden importar en otros componentes o layouts.
