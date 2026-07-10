@@ -451,7 +451,7 @@
         {
           "slug": "02-app-router",
           "title": "App Router",
-          "description": "App Router, layouts, templates, linking",
+          "description": "App Router, layouts, estructura de proyecto",
           "file": "NextJS/02-app-router.md"
         },
         {
@@ -479,52 +479,52 @@
           "file": "NextJS/06-data-fetching.md"
         },
         {
-          "slug": "07-api-routes",
+          "slug": "07-static-dynamic-rendering",
+          "title": "Static y Dynamic Rendering",
+          "description": "SSG, ISR, SSR",
+          "file": "NextJS/07-static-dynamic-rendering.md"
+        },
+        {
+          "slug": "08-client-data-fetching",
+          "title": "Data Fetching en el Cliente",
+          "description": "Fetch en cliente, React Query",
+          "file": "NextJS/08-client-data-fetching.md"
+        },
+        {
+          "slug": "09-api-routes",
           "title": "API Routes (Route Handlers)",
           "description": "Route Handlers, rutas dinámicas",
-          "file": "NextJS/07-api-routes.md"
+          "file": "NextJS/09-api-routes.md"
         },
         {
-          "slug": "08-image-component",
+          "slug": "10-image-component",
           "title": "Image Component",
           "description": "Optimización de imágenes",
-          "file": "NextJS/08-image-component.md"
+          "file": "NextJS/10-image-component.md"
         },
         {
-          "slug": "09-metadata",
+          "slug": "11-metadata",
           "title": "Metadata",
           "description": "SEO, metadata API, Open Graph",
-          "file": "NextJS/09-metadata.md"
+          "file": "NextJS/11-metadata.md"
         },
         {
-          "slug": "10-middleware",
+          "slug": "12-middleware",
           "title": "Middleware",
           "description": "Middleware, matchers, redirects",
-          "file": "NextJS/10-middleware.md"
+          "file": "NextJS/12-middleware.md"
         },
         {
-          "slug": "11-public-folder",
+          "slug": "13-public-folder",
           "title": "Public Folder",
           "description": "Archivos estáticos",
-          "file": "NextJS/11-public-folder.md"
+          "file": "NextJS/13-public-folder.md"
         },
         {
           "slug": "temas-pendientes",
           "title": "Temas pendientes — Next.js",
           "description": "Temas por profundizar",
           "file": "NextJS/temas-pendientes.md"
-        },
-        {
-          "slug": "12-client-data-fetching",
-          "title": "Data Fetching en el Cliente",
-          "description": "",
-          "file": "NextJS/12-client-data-fetching.md"
-        },
-        {
-          "slug": "13-static-dynamic-rendering",
-          "title": "Static y Dynamic Rendering",
-          "description": "",
-          "file": "NextJS/13-static-dynamic-rendering.md"
         }
       ]
     },
@@ -1082,7 +1082,7 @@
     {
       "slug": "02-app-router",
       "title": "App Router",
-      "description": "App Router, layouts, templates, linking",
+      "description": "App Router, layouts, estructura de proyecto",
       "file": "NextJS/02-app-router.md",
       "category": "NextJS"
     },
@@ -1115,38 +1115,52 @@
       "category": "NextJS"
     },
     {
-      "slug": "07-api-routes",
+      "slug": "07-static-dynamic-rendering",
+      "title": "Static y Dynamic Rendering",
+      "description": "SSG, ISR, SSR",
+      "file": "NextJS/07-static-dynamic-rendering.md",
+      "category": "NextJS"
+    },
+    {
+      "slug": "08-client-data-fetching",
+      "title": "Data Fetching en el Cliente",
+      "description": "Fetch en cliente, React Query",
+      "file": "NextJS/08-client-data-fetching.md",
+      "category": "NextJS"
+    },
+    {
+      "slug": "09-api-routes",
       "title": "API Routes (Route Handlers)",
       "description": "Route Handlers, rutas dinámicas",
-      "file": "NextJS/07-api-routes.md",
+      "file": "NextJS/09-api-routes.md",
       "category": "NextJS"
     },
     {
-      "slug": "08-image-component",
+      "slug": "10-image-component",
       "title": "Image Component",
       "description": "Optimización de imágenes",
-      "file": "NextJS/08-image-component.md",
+      "file": "NextJS/10-image-component.md",
       "category": "NextJS"
     },
     {
-      "slug": "09-metadata",
+      "slug": "11-metadata",
       "title": "Metadata",
       "description": "SEO, metadata API, Open Graph",
-      "file": "NextJS/09-metadata.md",
+      "file": "NextJS/11-metadata.md",
       "category": "NextJS"
     },
     {
-      "slug": "10-middleware",
+      "slug": "12-middleware",
       "title": "Middleware",
       "description": "Middleware, matchers, redirects",
-      "file": "NextJS/10-middleware.md",
+      "file": "NextJS/12-middleware.md",
       "category": "NextJS"
     },
     {
-      "slug": "11-public-folder",
+      "slug": "13-public-folder",
       "title": "Public Folder",
       "description": "Archivos estáticos",
-      "file": "NextJS/11-public-folder.md",
+      "file": "NextJS/13-public-folder.md",
       "category": "NextJS"
     },
     {
@@ -1154,20 +1168,6 @@
       "title": "Temas pendientes — Next.js",
       "description": "Temas por profundizar",
       "file": "NextJS/temas-pendientes.md",
-      "category": "NextJS"
-    },
-    {
-      "slug": "12-client-data-fetching",
-      "title": "Data Fetching en el Cliente",
-      "description": "",
-      "file": "NextJS/12-client-data-fetching.md",
-      "category": "NextJS"
-    },
-    {
-      "slug": "13-static-dynamic-rendering",
-      "title": "Static y Dynamic Rendering",
-      "description": "",
-      "file": "NextJS/13-static-dynamic-rendering.md",
       "category": "NextJS"
     },
     {

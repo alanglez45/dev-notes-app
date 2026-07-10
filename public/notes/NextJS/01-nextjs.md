@@ -69,13 +69,15 @@ Next.js incluye soporte integrado para Tailwind CSS al crearlo con la opción co
 
 | Archivo | Contenido |
 |---|---|
-| [App Router](02-app-router.md) | Archivos reservados, estructura de carpetas, layouts, rutas dinámicas |
+| [App Router](02-app-router.md) | Archivos reservados, estructura de carpetas, layouts, proyecto |
 | [Routing](03-routing.md) | Pages Router, App Router, Link, usePathname, useRouter, rutas dinámicas |
 | [Server Components](04-server-components.md) | Componentes de servidor, ventajas, limitaciones |
 | [Client Components](05-client-components.md) | Directiva 'use client', interactividad, hooks |
 | [Data Fetching](06-data-fetching.md) | Fetch en server, async/await, caching, loading/error states |
-| [API Routes](07-api-routes.md) | Route handlers, GET/POST, rutas dinámicas en API |
-| [Image Component](08-image-component.md) | Optimización, lazy loading, remotePatterns |
-| [Metadata](09-metadata.md) | Metadata API, generateMetadata, Open Graph |
-| [Middleware](10-middleware.md) | Middleware, matcher, autenticación, redirecciones |
-| [Public Folder](11-public-folder.md) | Archivos estáticos, favicon, assets |
+| [Static & Dynamic Rendering](07-static-dynamic-rendering.md) | SSG, ISR, SSR, cache strategies |
+| [Client Data Fetching](08-client-data-fetching.md) | Fetch en cliente, useState/useEffect vs React Query, tradeoffs |
+| [API Routes](09-api-routes.md) | Route handlers, GET/POST, rutas dinámicas en API |
+| [Image Component](10-image-component.md) | Optimización, lazy loading, remotePatterns |
+| [Metadata](11-metadata.md) | Metadata API, generateMetadata, Open Graph |
+| [Middleware](12-middleware.md) | Middleware, matcher, autenticación, redirecciones |
+| [Public Folder](13-public-folder.md) | Archivos estáticos, favicon, assets |

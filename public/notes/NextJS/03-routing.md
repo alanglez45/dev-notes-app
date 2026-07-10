@@ -103,22 +103,3 @@ export default function ProductDetail() {
 }
 ```
 
-## Rutas Dinámicas
-
-Crea una carpeta con `[param]` para rutas dinámicas. El parámetro se accede via `params`:
-
-```
-app/
-  blog/
-    page.tsx           → /blog
-    [slug]/
-      page.tsx         → /blog/:slug
-```
-
-```tsx
-// app/blog/[slug]/page.tsx
-export default async function BlogPost({ params }: { params: { slug: string } }) {
-    const post = await getPost(params.slug);
-    return <article>{post.content}</article>;
-}
-```

@@ -71,7 +71,7 @@ export default function ShopLayout({ children }: { children: React.ReactNode }) 
 
 ## Rutas Dinámicas
 
-Para rutas dinámicas, crea una carpeta con `[param]`:
+Crea una carpeta con `[param]` para rutas dinámicas. El parámetro se accede via `params`:
 
 ```
 app/

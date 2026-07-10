@@ -46,16 +46,18 @@
 ## Frameworks
 - [Next.js](NextJS/index.md) - Next.js 14: App Router, Server Components, API routes, Image optimization, middleware
 - [Introducción](NextJS/01-nextjs.md) - Conceptos básicos, instalación, creación de proyectos
-- [App Router](NextJS/02-app-router.md) - App Router, layouts, templates, linking
+- [App Router](NextJS/02-app-router.md) - App Router, layouts, estructura de proyecto
 - [Routing](NextJS/03-routing.md) - Routing, navegación, Link, useRouter
 - [Server Components](NextJS/04-server-components.md) - RSC, server-side rendering
 - [Client Components](NextJS/05-client-components.md) - 'use client', interactividad
 - [Data Fetching](NextJS/06-data-fetching.md) - fetch, caching, revalidación
-- [API Routes](NextJS/07-api-routes.md) - Route Handlers, rutas dinámicas
-- [Image Component](NextJS/08-image-component.md) - Optimización de imágenes
-- [Metadata](NextJS/09-metadata.md) - SEO, metadata API, Open Graph
-- [Middleware](NextJS/10-middleware.md) - Middleware, matchers, redirects
-- [Public Folder](NextJS/11-public-folder.md) - Archivos estáticos
+- [Static & Dynamic Rendering](NextJS/07-static-dynamic-rendering.md) - SSG, ISR, SSR
+- [Client Data Fetching](NextJS/08-client-data-fetching.md) - Fetch en cliente, React Query
+- [API Routes](NextJS/09-api-routes.md) - Route Handlers, rutas dinámicas
+- [Image Component](NextJS/10-image-component.md) - Optimización de imágenes
+- [Metadata](NextJS/11-metadata.md) - SEO, metadata API, Open Graph
+- [Middleware](NextJS/12-middleware.md) - Middleware, matchers, redirects
+- [Public Folder](NextJS/13-public-folder.md) - Archivos estáticos
 - [Temas pendientes](NextJS/temas-pendientes.md) - Temas por profundizar
 
 ## Docker
