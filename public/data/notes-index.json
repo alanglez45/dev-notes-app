@@ -155,46 +155,76 @@
       "icon": "/react.png",
       "notes": [
         {
-          "slug": "fundamentals",
-          "title": "React Fundamentals",
-          "description": "JSX, components, props, Virtual DOM, PropTypes",
-          "file": "React/fundamentals.md"
-        },
-        {
-          "slug": "hooks",
-          "title": "React Hooks",
-          "description": "useState, useEffect, useRef, useCallback, useMemo, useReducer, custom hooks",
-          "file": "React/hooks.md"
-        },
-        {
-          "slug": "context-api",
-          "title": "React Context API",
-          "description": "createContext, Provider, useContext",
-          "file": "React/context-api.md"
-        },
-        {
-          "slug": "controlled-vs-uncontrolled",
-          "title": "Controlled vs Uncontrolled Components",
-          "description": "",
-          "file": "React/controlled-vs-uncontrolled.md"
-        },
-        {
-          "slug": "memo",
-          "title": "React.memo",
-          "description": "Component memoization",
-          "file": "React/memo.md"
-        },
-        {
-          "slug": "react-router-dom",
-          "title": "React Router DOM",
-          "description": "Routes, navigation, hooks",
-          "file": "React/react-router-dom.md"
-        },
-        {
-          "slug": "class-components",
+          "slug": "11-class-components-legacy",
           "title": "Class Components React",
-          "description": "State, props, lifecycle methods",
-          "file": "React/class-components.md"
+          "description": "",
+          "file": "React/11-class-components-legacy.md"
+        },
+        {
+          "slug": "03-components-props",
+          "title": "Components & Props",
+          "description": "",
+          "file": "React/03-components-props.md"
+        },
+        {
+          "slug": "08-controlled-vs-uncontrolled-components",
+          "title": "Forms Patterns: Controlled vs Uncontrolled",
+          "description": "",
+          "file": "React/08-controlled-vs-uncontrolled-components.md"
+        },
+        {
+          "slug": "02-jsx",
+          "title": "JSX",
+          "description": "",
+          "file": "React/02-jsx.md"
+        },
+        {
+          "slug": "09-performance-memoization",
+          "title": "Performance & Memoization",
+          "description": "",
+          "file": "React/09-performance-memoization.md"
+        },
+        {
+          "slug": "07-context-api",
+          "title": "React Context API",
+          "description": "",
+          "file": "React/07-context-api.md"
+        },
+        {
+          "slug": "01-fundamentals",
+          "title": "React Fundamentals",
+          "description": "",
+          "file": "React/01-fundamentals.md"
+        },
+        {
+          "slug": "06-hooks",
+          "title": "React Hooks",
+          "description": "",
+          "file": "React/06-hooks.md"
+        },
+        {
+          "slug": "06d-hooks-advanced",
+          "title": "React Hooks: Advanced",
+          "description": "",
+          "file": "React/06d-hooks-advanced.md"
+        },
+        {
+          "slug": "06b-hooks-effects",
+          "title": "React Hooks: Effects",
+          "description": "",
+          "file": "React/06b-hooks-effects.md"
+        },
+        {
+          "slug": "06c-hooks-memo",
+          "title": "React Hooks: Refs & Memoization",
+          "description": "",
+          "file": "React/06c-hooks-memo.md"
+        },
+        {
+          "slug": "06a-hooks-state",
+          "title": "React Hooks: State",
+          "description": "",
+          "file": "React/06a-hooks-state.md"
         },
         {
           "slug": "index",
@@ -203,10 +233,22 @@
           "file": "React/index.md"
         },
         {
-          "slug": "use-memo",
-          "title": "useMemo Hook",
+          "slug": "10-react-router-dom",
+          "title": "React Router DOM",
           "description": "",
-          "file": "React/use-memo.md"
+          "file": "React/10-react-router-dom.md"
+        },
+        {
+          "slug": "05-security",
+          "title": "Security in React",
+          "description": "",
+          "file": "React/05-security.md"
+        },
+        {
+          "slug": "04-styling",
+          "title": "Styling in React",
+          "description": "",
+          "file": "React/04-styling.md"
         }
       ]
     },
@@ -758,52 +800,87 @@
       "category": "TypeScript"
     },
     {
-      "slug": "fundamentals",
-      "title": "React Fundamentals",
-      "description": "JSX, components, props, Virtual DOM, PropTypes",
-      "file": "React/fundamentals.md",
-      "category": "React"
-    },
-    {
-      "slug": "hooks",
-      "title": "React Hooks",
-      "description": "useState, useEffect, useRef, useCallback, useMemo, useReducer, custom hooks",
-      "file": "React/hooks.md",
-      "category": "React"
-    },
-    {
-      "slug": "context-api",
-      "title": "React Context API",
-      "description": "createContext, Provider, useContext",
-      "file": "React/context-api.md",
-      "category": "React"
-    },
-    {
-      "slug": "controlled-vs-uncontrolled",
-      "title": "Controlled vs Uncontrolled Components",
-      "description": "",
-      "file": "React/controlled-vs-uncontrolled.md",
-      "category": "React"
-    },
-    {
-      "slug": "memo",
-      "title": "React.memo",
-      "description": "Component memoization",
-      "file": "React/memo.md",
-      "category": "React"
-    },
-    {
-      "slug": "react-router-dom",
-      "title": "React Router DOM",
-      "description": "Routes, navigation, hooks",
-      "file": "React/react-router-dom.md",
-      "category": "React"
-    },
-    {
-      "slug": "class-components",
+      "slug": "11-class-components-legacy",
       "title": "Class Components React",
-      "description": "State, props, lifecycle methods",
-      "file": "React/class-components.md",
+      "description": "",
+      "file": "React/11-class-components-legacy.md",
+      "category": "React"
+    },
+    {
+      "slug": "03-components-props",
+      "title": "Components & Props",
+      "description": "",
+      "file": "React/03-components-props.md",
+      "category": "React"
+    },
+    {
+      "slug": "08-controlled-vs-uncontrolled-components",
+      "title": "Forms Patterns: Controlled vs Uncontrolled",
+      "description": "",
+      "file": "React/08-controlled-vs-uncontrolled-components.md",
+      "category": "React"
+    },
+    {
+      "slug": "02-jsx",
+      "title": "JSX",
+      "description": "",
+      "file": "React/02-jsx.md",
+      "category": "React"
+    },
+    {
+      "slug": "09-performance-memoization",
+      "title": "Performance & Memoization",
+      "description": "",
+      "file": "React/09-performance-memoization.md",
+      "category": "React"
+    },
+    {
+      "slug": "07-context-api",
+      "title": "React Context API",
+      "description": "",
+      "file": "React/07-context-api.md",
+      "category": "React"
+    },
+    {
+      "slug": "01-fundamentals",
+      "title": "React Fundamentals",
+      "description": "",
+      "file": "React/01-fundamentals.md",
+      "category": "React"
+    },
+    {
+      "slug": "06-hooks",
+      "title": "React Hooks",
+      "description": "",
+      "file": "React/06-hooks.md",
+      "category": "React"
+    },
+    {
+      "slug": "06d-hooks-advanced",
+      "title": "React Hooks: Advanced",
+      "description": "",
+      "file": "React/06d-hooks-advanced.md",
+      "category": "React"
+    },
+    {
+      "slug": "06b-hooks-effects",
+      "title": "React Hooks: Effects",
+      "description": "",
+      "file": "React/06b-hooks-effects.md",
+      "category": "React"
+    },
+    {
+      "slug": "06c-hooks-memo",
+      "title": "React Hooks: Refs & Memoization",
+      "description": "",
+      "file": "React/06c-hooks-memo.md",
+      "category": "React"
+    },
+    {
+      "slug": "06a-hooks-state",
+      "title": "React Hooks: State",
+      "description": "",
+      "file": "React/06a-hooks-state.md",
       "category": "React"
     },
     {
@@ -814,10 +891,24 @@
       "category": "React"
     },
     {
-      "slug": "use-memo",
-      "title": "useMemo Hook",
+      "slug": "10-react-router-dom",
+      "title": "React Router DOM",
       "description": "",
-      "file": "React/use-memo.md",
+      "file": "React/10-react-router-dom.md",
+      "category": "React"
+    },
+    {
+      "slug": "05-security",
+      "title": "Security in React",
+      "description": "",
+      "file": "React/05-security.md",
+      "category": "React"
+    },
+    {
+      "slug": "04-styling",
+      "title": "Styling in React",
+      "description": "",
+      "file": "React/04-styling.md",
       "category": "React"
     },
     {
